@@ -47,7 +47,6 @@ window.Typekit.config = {
   "type": "configurable"
 };
 /*{"k":"1.18.23","auto_updating":true,"last_published":"2016-11-28 04:39:06 UTC"}*/
-;
 (function(window, document, undefined) {
   if (!document.querySelector) {
     document.documentElement.className += " wf-inactive";
@@ -104,13 +103,11 @@ window.Typekit.config = {
       c.push(e.name + ":" + e.value + ";")
     }
     return b + "{" + c.join("") + "}"
-  };
-
-  function r(a, b) {
+  }
+    function r(a, b) {
     return (a & 65535) * b + (((a >>> 16) * b & 65535) << 16)
-  };
-
-  function t(a, b) {
+  }
+    function t(a, b) {
     this.b = b || Array(Math.ceil(a / 32));
     if (!b)
       for (var c = 0; c < this.b.length; c++) this.b[c] = 0
@@ -267,9 +264,8 @@ window.Typekit.config = {
         f || (f = !0, c && c(Error("Script load timeout")))
       }, 5E3)
     }
-  };
-
-  function B(a, b, c) {
+  }
+    function B(a, b, c) {
     this.g = a.g.document.documentElement;
     this.j = b;
     this.m = c;
@@ -299,9 +295,8 @@ window.Typekit.config = {
     if (a.m[b])
       if (c) a.m[b](c.b, E(c));
       else a.m[b]()
-  };
-
-  function la(a, b, c) {
+  }
+    function la(a, b, c) {
     c = c || {};
     this.b = a;
     this.g = b;
@@ -326,9 +321,8 @@ window.Typekit.config = {
 
   function E(a) {
     return a.style.charAt(0) + a.weight.charAt(0)
-  };
-
-  function ma() {
+  }
+    function ma() {
     var a = document,
       b = navigator.userAgent;
     if (/MSIE|Trident/.test(b) && (a.documentMode ? 9 > a.documentMode : 1)) b = "i";
@@ -351,9 +345,8 @@ window.Typekit.config = {
       b = a ? "j" : "k"
     }
     return b
-  };
-
-  function H(a) {
+  }
+    function H(a) {
     this.b = a
   }
 
@@ -365,9 +358,8 @@ window.Typekit.config = {
       }
       return encodeURIComponent(b[d] || "")
     })
-  };
-
-  function J() {
+  }
+    function J() {
     this.b = []
   }
 
@@ -473,9 +465,8 @@ window.Typekit.config = {
       e.push(ta(a, b, c, d))
     });
     return e.join("")
-  };
-
-  function M(a, b) {
+  }
+    function M(a, b) {
     this.g = a;
     this.i = b;
     this.b = u(this.g, "span", {
@@ -489,9 +480,8 @@ window.Typekit.config = {
 
   function O(a) {
     return "display:block !important;position:absolute !important;top:-9999px !important;left:-9999px !important;font-size:300px !important;width:auto !important;height:auto !important;line-height:normal !important;margin:0 !important;padding:0 !important;font-variant:normal !important;white-space:nowrap !important;font-family:" + a.b + " !important;font-weight:" + a.weight + " !important;font-style:" + a.style + " !important;"
-  };
-
-  function ua(a, b, c, d, e, f, g, h) {
+  }
+    function ua(a, b, c, d, e, f, g, h) {
     this.D = a;
     this.H = b;
     this.u = c;
@@ -563,9 +553,8 @@ window.Typekit.config = {
       y(this.o.b);
       b(this.b)
     }, a), 0)
-  };
-
-  function za(a, b, c, d, e, f, g) {
+  }
+    function za(a, b, c, d, e, f, g) {
     this.i = a;
     this.u = b;
     this.b = d;
@@ -656,9 +645,8 @@ window.Typekit.config = {
 
   function Ba(a) {
     !--a.g && a.m && (a.o ? (a = a.b, a.i && z(a.g, [a.b.b("wf", "active")], [a.b.b("wf", "loading"), a.b.b("wf", "inactive")]), D(a, "active")) : C(a.b))
-  };
-
-  function U(a) {
+  }
+    function U(a) {
     this.b = a;
     this.m = null;
     this.g = [];
@@ -775,9 +763,8 @@ window.Typekit.config = {
       for (c = 0; c < a.b.length; c++) a.b[c].load(null, c == a.b.length - 1, b);
       a.b = []
     }
-  };
-
-  function Ga() {
+  }
+    function Ga() {
     var a = n.ps,
       b = n.ht,
       c = n.fi,
@@ -806,8 +793,8 @@ window.Typekit.config = {
     setTimeout(function() {
       c || (b.src = "about:blank", b.onload = null)
     }, 3E3)
-  };
-  var Ha = new function() {
+  }
+    var Ha = new function() {
     var a = window;
     this.g = this.i = a;
     this.b = this.g.document
@@ -905,5 +892,6 @@ window.Typekit.config = {
   }
   if (window.WebFont) try {
     window.Typekit.load()
-  } catch (a) {};
+  } catch (a) {
+  }
 }(this, document));

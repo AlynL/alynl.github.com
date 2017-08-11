@@ -2769,7 +2769,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
       if (g.promise(x).complete = m.add, x.success = x.done, x.error = x.fail, d.url = ((e || d.url || me.href) + "").replace(_e, "").replace(Se, me.protocol + "//"), d.type = n.method || n.type || d.method || d.type, d.dataTypes = ot.trim(d.dataType || "*").toLowerCase().match(wt) || [""], null == d.crossDomain) {
         u = G.createElement("a");
         try {
-          u.href = d.url, u.href = u.href, d.crossDomain = Ee.protocol + "//" + Ee.host != u.protocol + "//" + u.host
+          u.href = d.url, d.crossDomain = Ee.protocol + "//" + Ee.host != u.protocol + "//" + u.host
         } catch (T) {
           d.crossDomain = !0
         }
@@ -7233,7 +7233,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
             } catch (r) {
               console.error(r)
             } finally {
-              return
+
             }
           })
         })

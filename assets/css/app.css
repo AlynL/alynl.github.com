@@ -1,7 +1,4 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -42,7 +39,7 @@ abbr[title] {
   border-bottom: 1px dotted
 }
 
-b, strong {
+b {
   font-weight: 700
 }
 
@@ -2294,7 +2291,7 @@ h6 {
 
 p {
   color: #8c8c8c;
-  font-family: proxima-nova, sans-serif
+  font-family: "Noto Sans KR", sans-serif
 }
 
 strong {
@@ -2345,7 +2342,6 @@ strong {
   height: .6875rem;
   overflow: hidden;
   transition: -webkit-transform .3s cubic-bezier(.4, 0, .2, 1);
-  transition: transform .3s cubic-bezier(.4, 0, .2, 1);
   transition: transform .3s cubic-bezier(.4, 0, .2, 1), -webkit-transform .3s cubic-bezier(.4, 0, .2, 1);
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -2579,6 +2575,14 @@ body, html {
   margin-bottom: 1.25rem
 }
 
+.stext {
+  font-size: 0.7em;
+  color: #333;
+  font-weight: 400;
+}
+
+
+
 @media screen and (max-width:39.9375em) {
   .decorative {
     margin-bottom: .75rem;
@@ -2587,7 +2591,17 @@ body, html {
 }
 
 .story {
-  padding: 3rem 0
+  padding: 3rem 0;
+  text-align: center;
+}
+.story p {
+  margin: .4rem 0 0;
+}
+.story h2 {
+  border-top: 2px dotted #b0b0b0;
+  border-bottom: 2px dotted #b0b0b0;
+  margin-bottom: .75rem;
+
 }
 
 @media screen and (min-width:64em) {
@@ -2595,20 +2609,25 @@ body, html {
     padding: 7rem 0 3rem
   }
 }
-
-.story p {
-  margin: .25rem 0 0;
-  text-align: justify
+@media screen and (min-width:39.9375em) {
+  .story p {
+    margin: .25rem 0 0;
+    text-align: justify;
+  }
 }
 
+
+
+
 .story .ashley, .story .jeff {
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width:64em) {
   .story .ashley {
     padding-right: 1.5rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: center;
   }
 }
 
@@ -2637,8 +2656,8 @@ body, html {
 }
 
 .quote blockquote {
-  border-top: 2px solid #acbcb4;
-  border-bottom: 2px solid #acbcb4;
+  border-top: 2px solid #797979;
+  border-bottom: 2px solid #797979;
   margin: 0
 }
 
@@ -3635,7 +3654,7 @@ footer img, footer p {
   right: 0;
   bottom: 0;
   height: 100%;
-  width: 100
+  width: 100%
 }
 
 [data-scrollbar], [scrollbar], scrollbar {
@@ -3918,27 +3937,4 @@ hr.line-divider{
   right:0	;
   margin-right:19px;
 }
-
-
-.greeting_content {text-align: center;}
-.greeting_text {width:98%; margin:40px auto; color:#444; font-size:0.9em; line-height:2; text-align:center; word-break: break-word;}
-.greeting_name {width: 70%; max-width: 350px; min-width: 280px; margin:40px auto; color:#444; box-sizing: border-box; text-align:center;}
-.greeting_name:after {display:block; content:''; clear:both}
-.greeting_name li {display:inline-block; width:45%; vertical-align:top;}
-.greeting_name li span:first-child {display:inline-block; font-size:0.7em; font-weight:bold; padding:0 10px 0 0;}
-.greeting_name li .panel {display:none; font-size: 0.7em; line-height:1; color:#fff;
-  margin:10px 0 0 0;padding: 6px; background-color:#00aeef; border-radius: 20px; cursor:pointer}
-.greeting_name li .panel a {color:#fff}
-
-.greeting_loca {width: 100%; margin:40px auto; padding: 0; box-sizing: border-box;
-  text-align:center; color: #000; line-height: 1.2; font-size:0.9em; font-weight:bold; word-break: break-word;}
-.greeting_loca p {margin:8px 0}
-.greeting_loca span {margin: 0 5px 0 0;}
-.greeting_loca span:last-child {margin:0}
-.greeting_loca span.option {display:block}
-.greeting_loca p:last-child {color:#666; font-size:0.8em}
-.greeting_bar {margin:0 0; text-align:center;}
-
-
-
 
