@@ -2596,6 +2596,13 @@ body, html {
 }
 .story p {
   margin: .4rem 0 0;
+  font-weight:300;
+  font-size: 1.2em;
+}
+.story .info {
+  font-weight:normal;
+  color: #333333;
+  font-size: 1em;
 }
 .story h2 {
   border-top: 2px dotted #b0b0b0;
@@ -2616,6 +2623,16 @@ body, html {
   }
 }
 
+@media screen and (max-width:24em) {
+  .story p {
+    font-size: 1em;
+    margin: .25rem 0 0;
+  }
+  .story .info {
+    font-size: 0.7em;
+  }
+}
+
 
 
 
@@ -2627,7 +2644,6 @@ body, html {
   .story .ashley {
     padding-right: 1.5rem;
     margin-bottom: 0;
-    text-align: center;
   }
 }
 
@@ -2994,6 +3010,11 @@ body, html {
   top: 0;
   bottom: 0;
   float: right
+}
+
+.background .footer {
+  background-color: #6fc6f8;
+  width: 100%;
 }
 
 .background .medium-5 {
@@ -3784,6 +3805,38 @@ footer img, footer p {
 }
 
 
+/* ----------------------------------------------*/
+/* 12.5 Footer Section				 			 */
+/* ----------------------------------------------*/
+footer .image-divider.fixed-height{
+  height:250px;
+}
+
+#thank-you{
+  text-align:center;
+  color: #b0b0b0;
+  font-family: 'Pacifico';
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  padding-right:30px;
+  margin-top:40px;
+  margin-bottom:25px;
+}
+
+#thank{
+  font-size:55px;
+  line-height:45px
+}
+
+#you{
+  font-size:55px;
+  line-height:45px;
+}
+
+
+
+
 /* 07.2.8 SPACE AND LINE DIVIDER 				 */
 /* ----------------------------------------------*/
 .space-divider{
@@ -3844,6 +3897,14 @@ hr.line-divider{
 
 .grey-heart{
   color: #e1dddd;
+  font-size:18px;
+  margin-left:-15px;
+  position:relative;
+  z-index:2
+}
+
+.dgrey-heart{
+  color: #b0b0b0;
   font-size:18px;
   margin-left:-15px;
   position:relative;
