@@ -2522,6 +2522,13 @@ body, html {
   transition-property: none
 }
 
+@media screen and (max-width:39.9375em) {
+  .background-image {
+    background-image: url(/assets/img/bgMobile.jpg)
+  }
+}
+
+
 
 .names {
   text-align: center;
@@ -3012,10 +3019,6 @@ body, html {
   float: right
 }
 
-.background .footer {
-  background-color: #6fc6f8;
-  width: 100%;
-}
 
 .background .medium-5 {
   margin-bottom: 4rem
@@ -3762,7 +3765,6 @@ footer img, footer p {
   position:relative;
   padding-bottom:56.25%;
   padding-top:30px;
-  height:0;
   overflow:hidden;
 }
 
@@ -3821,7 +3823,7 @@ footer .image-divider.fixed-height{
   transform: rotate(-10deg);
   padding-right:30px;
   margin-top:40px;
-  margin-bottom:25px;
+  margin-bottom:75px;
 }
 
 #thank{
@@ -3832,6 +3834,7 @@ footer .image-divider.fixed-height{
 #you{
   font-size:55px;
   line-height:45px;
+
 }
 
 
